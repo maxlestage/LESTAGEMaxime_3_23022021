@@ -1,0 +1,19 @@
+{
+  "name": "lestagemaxime_3_23022021",
+  "version": "1.0.0",
+  "description": "Projet 3 avec utilisation de SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxlestage/LESTAGEMaxime_3_23022021.git"
+  },
+  "author": "Maxime LESTAGE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxlestage/LESTAGEMaxime_3_23022021/issues"
+  },
+  "homepage": "https://github.com/maxlestage/LESTAGEMaxime_3_23022021#readme"
+}
