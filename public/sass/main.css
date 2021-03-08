@@ -1,0 +1,87 @@
+/* Shrikhand */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* ROBOTO  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+header, footer > h4 {
+  /* Shrikhand */
+  font-family: 'Shrikhand', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page {
+  /* ROBOTO  */
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#localize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+}
+
+#info {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+#info h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 100%;
+  background-color: #353535;
+}
+
+footer h4, footer a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
