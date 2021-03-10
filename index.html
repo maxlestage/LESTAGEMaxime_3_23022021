@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/sass/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="images/logo/ohmyfood@2x.svg" />
     <!-- NE PAS OUBLIER D'IMPORTER LE FAV ICON -->
     <title>ohmyfood</title>
 </head>
@@ -21,53 +21,57 @@
 
         <!-- Barre d'adresse, ici situé : Paris, Belleville -->
         <section id="localize">
-            <h2><i class="fas fa-map-marker-alt"></i>Paris, Belleville</h2>
+            <div>
+                <h2><i class="fas fa-map-marker-alt"></i>Paris, Belleville</h2>
+            </div>
         </section>
 
 
         <!-- Début de page utilisateur -->
         <section id="info">
             <h3>Reserver le menu qui vous convient</h3>
-            <p>Découvrez des restaurants d'exception, selectionné par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <h4>Découvrez des restaurants d'exception, selectionné par nos soins.</h4>
+            <a href="#">Explorer nos restaurants</a>
         </section>
 
 
-        <div>
-            <P>Fonctionnement</P>
+        <div id="fonctionnement">
+            <h3>Fonctionnement</h3>
             <ul>
-                <li><a href="À-la-française.html" style="text-decoration:none"><span class="badge ">1</span><i
+                <li><span class="badge">1</span><a href="À-la-française.html"><i
                             class="fas fa-mobile-alt"></i>Choissisez un restaurants</a></li>
 
-                <li><a href="http://www.google.com/" style="text-decoration:none"><span class="badge ">2</span><i
-                            class="fas fa-list-ul"></i>Composez votre menu</a></li>
+                <li><span class="badge">2</span><a href="http://www.google.com/"><i class="fas fa-list-ul"></i>Composez
+                        votre menu</a></li>
 
-                <li><a href="http://www.google.com/" style="text-decoration:none"><span class="badge ">3</span><i
-                            class="fas fa-store"></i>Dégustez au restaurant</a></li>
+                <li><span class="badge">3</span><a href="http://www.google.com/"><i class="fas fa-store"></i>Dégustez au
+                        restaurant</a></li>
             </ul>
         </div>
 
-        <section>
+        <section id="restaurants">
             <h3>Restaurants</h3>
             <div>
                 <!-- Une image avec une légende -->
                 <div>
                     <a href="La-palette-du-goût.html">
-                        <div class="tag">
+                        <span class="tag">
                             Nouveau
-                        </div>
+                        </span>
                         <img src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Le logo de MDN.">
                         <span>La palette du goût</span>
                         <span>Ménilmontant</span>
                     </a>
                     <i class="far fa-heart"></i>
                 </div>
+
+
                 <!-- Une image avec une légende -->
                 <div>
                     <a href="La-note-enchantée.html">
-                        <div class="tag">
+                        <span class="tag">
                             Nouveau
-                        </div>
+                        </span>
                         <img src="public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Le logo de MDN.">
                         <span>La note enchantée</span>
                         <span>Charonne</span>
@@ -78,9 +82,9 @@
                 <!-- Une image avec une légende -->
                 <div>
                     <a href="À-la-française.html">
-                        <div class="tag">
+                        <span class="tag">
                             Nouveau
-                        </div>
+                        </span>
                         <img src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Le logo de MDN.">
                         <span>À la française</span>
                         <span>Cité Rouge</span>
@@ -91,9 +95,9 @@
                 <!-- Une image avec une légende -->
                 <div>
                     <a href="Le-délice-des-sens.html">
-                        <div class="tag">
+                        <span class="tag">
                             Nouveau
-                        </div>
+                        </span>
                         <img src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                             alt="Le logo de MDN.">
                         <span>Le délice des sens</span>
@@ -101,6 +105,7 @@
                     </a>
                     <i class="far fa-heart"></i>
                 </div>
+
             </div>
         </section>
 

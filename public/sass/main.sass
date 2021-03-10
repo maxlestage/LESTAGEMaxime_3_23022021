@@ -10,16 +10,23 @@
 
 $localizeBackColor: #eaeaea
 $infoBackColor: #f6f6f6
+$footerColor: #353535
+
+@mixin box-shadow
+    box-shadow: 1px 2px 7px 1px #e6e6e6
 
 header, footer > h4
     /* Shrikhand */
     font-family: 'Shrikhand', cursive
     @include flexcenter
 
+body
+    width: 100%
+    margin: auto
+
 #page
     /* ROBOTO  */
     font-family: 'Roboto', sans-serif
-    margin: auto
 
 ul
     list-style: none
@@ -34,19 +41,83 @@ header
 #info
     background-color: $infoBackColor
     text-align: center
+    padding-bottom: 7%
+    padding-top: 2%
     h3
         @include flexcenter
         text-align: center
     p
         @include flexcenter
         text-align: center
+        padding-bottom: 10%
+        color: #808080
+        width: 80%
+        margin: auto
+
+    a
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-left: 30px
+        padding-right: 30px
+        border-radius: 25px
+        background: linear-gradient(#ef76da, #a45cdb)
+        @include box-shadow
+        color: white
+        text-align: center
+        text-decoration: none
+
+#fonctionnement
+    width: 100%
+
+    ul
+        flex-direction: column
+        margin: 1%
+    li
+        display: flex
+        justify-content: space-evenly
+        margin: 6%
+
+    .badge
+        width: 2%
+        border-radius: 50%
+        padding: 2.5px 9px
+        background: #9356dc
+        height: 1.4rem
+        justify-content: center
+        color: #fff
+        margin: auto
+        margin-right: -1em
+        position: relative
+
+    a
+        text-align: justify
+        text-decoration: none
+        color: #808080
+        padding-top: 5%
+        padding-bottom: 5%
+        background-color: #f6f6f6
+        border-radius: 15px
+        @include box-shadow
+        width: 94%
+
+    a:hover
+        background-color: #f5edff
+        text-decoration: none
+
+    i
+        padding-right: 5%
+        padding-left: 10%
+
+#restaurants
+    div
+        border: 1px solid black
 
 footer
     display: flex
     flex-direction: column
     margin: auto
     width: 100%
-    background-color: #353535
+    background-color: $footerColor
     h4, a
         color: white
         text-decoration: none

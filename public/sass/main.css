@@ -13,10 +13,14 @@ header, footer > h4 {
           justify-content: center;
 }
 
+body {
+  width: 100%;
+  margin: auto;
+}
+
 #page {
   /* ROBOTO  */
   font-family: 'Roboto', sans-serif;
-  margin: auto;
 }
 
 ul {
@@ -45,6 +49,8 @@ header {
 #info {
   background-color: #f6f6f6;
   text-align: center;
+  padding-bottom: 7%;
+  padding-top: 2%;
 }
 
 #info h3 {
@@ -65,6 +71,89 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding-bottom: 10%;
+  color: #808080;
+  width: 80%;
+  margin: auto;
+}
+
+#info a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ef76da), to(#a45cdb));
+  background: linear-gradient(#ef76da, #a45cdb);
+  -webkit-box-shadow: 1px 2px 7px 1px #e6e6e6;
+          box-shadow: 1px 2px 7px 1px #e6e6e6;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+#fonctionnement {
+  width: 100%;
+}
+
+#fonctionnement ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1%;
+}
+
+#fonctionnement li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 6%;
+}
+
+#fonctionnement .badge {
+  width: 2%;
+  border-radius: 50%;
+  padding: 2.5px 9px;
+  background: #9356dc;
+  height: 1.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  margin: auto;
+  margin-right: -1em;
+  position: relative;
+}
+
+#fonctionnement a {
+  text-align: justify;
+  text-decoration: none;
+  color: #808080;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 2px 7px 1px #e6e6e6;
+          box-shadow: 1px 2px 7px 1px #e6e6e6;
+  width: 94%;
+}
+
+#fonctionnement a:hover {
+  background-color: #f5edff;
+  text-decoration: none;
+}
+
+#fonctionnement i {
+  padding-right: 5%;
+  padding-left: 10%;
+}
+
+#restaurants div {
+  border: 1px solid black;
 }
 
 footer {
