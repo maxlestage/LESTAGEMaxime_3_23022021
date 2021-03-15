@@ -178,6 +178,8 @@ header {
 #restaurants div div img {
   border-radius: 25px 25px 0 0;
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
