@@ -153,6 +153,10 @@ header {
   padding-left: 10%;
 }
 
+#restaurants div {
+  padding-bottom: 10%;
+}
+
 #restaurants div div {
   border: 1px solid black;
   width: 90%;
@@ -177,7 +181,8 @@ header {
 
 #restaurants div div img {
   border-radius: 25px 25px 0 0;
-  max-width: 100%;
+  width: 100%;
+  height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
 }
