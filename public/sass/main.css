@@ -48,11 +48,15 @@ header {
   background-color: #eaeaea;
 }
 
+#localize h2 {
+  font-size: 1em;
+}
+
 #info {
   background-color: #f6f6f6;
   text-align: center;
-  padding-bottom: 10%;
-  padding-top: 2%;
+  padding-bottom: 15%;
+  padding-top: 5%;
 }
 
 #info h3 {
@@ -63,6 +67,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 1em;
 }
 
 #info p {
@@ -80,9 +87,9 @@ header {
 }
 
 #info h4 {
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   color: #5d5d5d;
-  width: 65%;
+  width: 70%;
   margin: auto;
 }
 
