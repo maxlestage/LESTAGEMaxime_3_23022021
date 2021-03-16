@@ -104,6 +104,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 1%;
+  width: 100%;
+  position: relative;
+  left: -47px;
 }
 
 #fonctionnement li {
