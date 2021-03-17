@@ -192,7 +192,7 @@ header {
 #restaurants div div i.far.fa-heart:hover {
   font-weight: 700;
   background: -webkit-linear-gradient(#ef76da, #a45cdb);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
