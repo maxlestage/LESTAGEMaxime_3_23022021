@@ -4,13 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 header {
   /* Shrikhand */
-  font-family: 'Shrikhand', cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Shrikhand", cursive;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 body {
@@ -20,7 +16,7 @@ body {
 
 #page {
   /* ROBOTO  */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -28,30 +24,19 @@ ul {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #localize {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: inset 0px 5px 7px -7px black;
-          box-shadow: inset 0px 5px 7px -7px black;
+  justify-content: center;
+  box-shadow: inset 0px 5px 7px -7px black;
   background-color: #eaeaea;
 }
-
 #localize i {
   padding-right: 1em;
 }
-
 #localize h2 {
   font-size: 1em;
   color: #4d4d4d;
@@ -63,51 +48,37 @@ header {
   padding-bottom: 15%;
   padding-top: 5%;
 }
-
 #info h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   width: 70%;
   margin: auto;
   padding-bottom: 1em;
 }
-
 #info p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   padding-bottom: 10%;
   color: #808080;
   width: 80%;
   margin: auto;
 }
-
 #info h4 {
   padding-bottom: 3em;
   color: #5d5d5d;
   width: 70%;
   margin: auto;
 }
-
 #info a {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ef76da), to(#a45cdb));
   background: linear-gradient(#ef76da, #a45cdb);
-  -webkit-box-shadow: 1px 2px 7px 1px #e6e6e6;
-          box-shadow: 1px 2px 7px 1px #e6e6e6;
+  box-shadow: 1px 2px 7px 1px #e6e6e6;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -116,47 +87,33 @@ header {
 #fonctionnement {
   width: 100%;
 }
-
 #fonctionnement h3 {
   padding-left: 1em;
 }
-
 #fonctionnement ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1%;
   width: 100%;
   position: relative;
   left: -47px;
 }
-
 #fonctionnement li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   margin: 6%;
 }
-
 #fonctionnement .badge {
   width: 2%;
   border-radius: 50%;
   padding: 2.5px 9px;
   background: #9356dc;
   height: 2%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: #fff;
   margin: auto;
   margin-right: -1em;
   position: relative;
 }
-
 #fonctionnement a {
   text-align: justify;
   text-decoration: none;
@@ -165,21 +122,17 @@ header {
   padding-bottom: 5%;
   background-color: #f6f6f6;
   border-radius: 15px;
-  -webkit-box-shadow: 1px 2px 7px 1px #e6e6e6;
-          box-shadow: 1px 2px 7px 1px #e6e6e6;
+  box-shadow: 1px 2px 7px 1px #e6e6e6;
   width: 94%;
 }
-
 #fonctionnement span {
   color: black;
 }
-
 #fonctionnement a:hover, #fonctionnement .fas:hover {
   color: #9457dc;
   background-color: #f5edff;
   text-decoration: none;
 }
-
 #fonctionnement i {
   padding-right: 5%;
   padding-left: 10%;
@@ -189,25 +142,20 @@ header {
   padding-top: 1em;
   background-color: #f6f6f6;
 }
-
 #restaurants h3 {
   padding-left: 1em;
 }
-
 #restaurants div {
   padding-bottom: 10%;
 }
-
 #restaurants div div {
   width: 90%;
   margin: auto;
   padding-bottom: 10%;
   border-radius: 25px 25px 25px 25px;
   margin-bottom: 7%;
-  -webkit-box-shadow: 1px 2px 15px 3px #9c9c9c47;
-          box-shadow: 1px 2px 15px 3px #9c9c9c47;
+  box-shadow: 1px 2px 15px 3px #9c9c9c47;
 }
-
 #restaurants div div span.tag {
   position: absolute;
   right: 9%;
@@ -218,24 +166,19 @@ header {
   background-color: #99e2d0;
   border-radius: 2px;
 }
-
 #restaurants div div img {
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: 12em;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 #restaurants div div span {
   text-decoration: none;
   color: #101010;
 }
-
 #restaurants div div span {
   color: #595959;
 }
-
 #restaurants div div i.far.fa-heart {
   position: absolute;
   right: 9%;
@@ -246,48 +189,39 @@ header {
   color: #6a6a6a;
   background-color: transparent;
 }
-
 #restaurants div div i.far.fa-heart:hover {
   font-weight: 700;
   background: -webkit-linear-gradient(#ef76da, #a45cdb);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: auto;
   width: 100%;
   background-color: #353535;
 }
-
 footer h4 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   color: white;
   text-decoration: none;
   padding-left: 40px;
   margin-bottom: 1em;
 }
-
 footer li {
   padding-bottom: 7px;
 }
-
 footer i {
   width: 1em;
   padding-right: 12px;
   font-size: x-small;
 }
-
 footer a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
 }
+
 /*# sourceMappingURL=main.css.map */
