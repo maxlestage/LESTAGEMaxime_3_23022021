@@ -167,6 +167,7 @@ header
                 color: #101010
             span
                 color: #595959
+
             i.far.fa-heart
                 position: absolute
                 right: 9%
@@ -175,6 +176,13 @@ header
                 padding-right: 7px
                 font-size: 25px
                 color: #6a6a6a
+                background-color: transparent
+
+            i.far.fa-heart:hover
+                font-weight: 700
+                background: -webkit-linear-gradient(#ef76da, #a45cdb)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
 
 footer
     display: flex
@@ -186,7 +194,7 @@ footer
         font-family: 'Shrikhand', cursive
         color: white
         text-decoration: none
-        padding-inline-start: 40px
+        padding-left: 40px
         margin-bottom: 1em
     li
         padding-bottom: 7px
