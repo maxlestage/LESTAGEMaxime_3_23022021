@@ -8,6 +8,31 @@ header {
   display: flex;
   justify-content: center;
 }
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
 body {
   width: 100%;
@@ -27,12 +52,62 @@ header {
   display: flex;
   justify-content: center;
 }
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
 #localize {
   display: flex;
   justify-content: center;
   box-shadow: inset 0px 5px 7px -7px black;
   background-color: #eaeaea;
+}
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 #localize i {
   padding-right: 1em;
@@ -56,6 +131,31 @@ header {
   margin: auto;
   padding-bottom: 1em;
 }
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 #info p {
   display: flex;
   justify-content: center;
@@ -64,6 +164,31 @@ header {
   color: #808080;
   width: 80%;
   margin: auto;
+}
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 #info h4 {
   padding-bottom: 3em;
@@ -189,12 +314,12 @@ header {
   font-size: 25px;
   color: #6a6a6a;
   background-color: transparent;
-  overflow: hidden;
-  transition: all cubic-bezier(0.13, 0.77, 1, 0.57);
+  transition: all 0.3s ease;
 }
-#restaurants div div i.far.fa-heart:hover {
+#restaurants div i.far.fa-heart:hover {
   font-weight: 700;
-  transition: 0.5s;
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
   background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

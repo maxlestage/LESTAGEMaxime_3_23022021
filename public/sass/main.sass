@@ -8,6 +8,26 @@
     display: flex
     justify-content: center
 
+    @keyframes swing
+        15%
+
+            transform: translateX(5px)
+        30%
+            -webkit-transform: translateX(-5px)
+            transform: translateX(-5px)
+        50%
+            -webkit-transform: translateX(3px)
+            transform: translateX(3px)
+        65%
+            -webkit-transform: translateX(-3px)
+            transform: translateX(-3px)
+        80%
+            -webkit-transform: translateX(2px)
+            transform: translateX(2px)
+        100%
+            -webkit-transform: translateX(0)
+            transform: translateX(0)
+
 $localizeBackColor: #eaeaea
 $infoBackColor: #f6f6f6
 $footerColor: #353535
@@ -178,15 +198,17 @@ header
                 font-size: 25px
                 color: #6a6a6a
                 background-color: transparent
-                overflow: hidden
-                transition: all cubic-bezier(.13,.77,1,.57)
+                transition: all 0.3s ease
 
-            i.far.fa-heart:hover
-                font-weight: 700
-                transition: .5s
-                background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
-                -webkit-background-clip: text
-                -webkit-text-fill-color: transparent
+        i.far.fa-heart:hover
+            font-weight: 700
+            // transition-delay: 0.3s
+            // transform: rotateZ(30deg)
+            animation: swing 1s ease
+            animation-iteration-count: 1
+            background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
 
 footer
     display: flex
