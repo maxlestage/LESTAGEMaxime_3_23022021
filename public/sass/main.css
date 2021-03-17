@@ -180,6 +180,7 @@ header {
   color: #595959;
 }
 #restaurants div div i.far.fa-heart {
+  cursor: pointer;
   position: absolute;
   right: 9%;
   margin-top: 10px;
@@ -188,10 +189,13 @@ header {
   font-size: 25px;
   color: #6a6a6a;
   background-color: transparent;
+  overflow: hidden;
+  transition: all cubic-bezier(0.13, 0.77, 1, 0.57);
 }
 #restaurants div div i.far.fa-heart:hover {
   font-weight: 700;
-  background: -webkit-linear-gradient(#ef76da, #a45cdb);
+  transition: 0.5s;
+  background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
