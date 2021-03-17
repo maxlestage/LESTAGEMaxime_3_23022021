@@ -167,7 +167,6 @@ header
                 color: #101010
             span
                 color: #595959
-
             i.far.fa-heart
                 cursor: pointer
                 position: absolute
@@ -179,16 +178,12 @@ header
                 color: #6a6a6a
                 background-color: transparent
                 transition: all 0.3s ease
-
-        i.far.fa-heart:hover
-            font-weight: 700
-            // transition-delay: 0.3s
-            // transform: rotateZ(30deg)
-            transition: .8s
-            content: ""
-            background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
+            i.far.fa-heart:hover
+                font-weight: 700 // Permet le passage en plein
+                transition: .8s
+                background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
 
 footer
     display: flex
