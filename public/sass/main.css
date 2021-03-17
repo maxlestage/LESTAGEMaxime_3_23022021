@@ -227,6 +227,25 @@ header {
      object-fit: cover;
 }
 
+#restaurants div div span {
+  text-decoration: none;
+  color: #101010;
+}
+
+#restaurants div div span {
+  color: #595959;
+}
+
+#restaurants div div i.far.fa-heart {
+  position: absolute;
+  right: 9%;
+  margin-top: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 25px;
+  color: #6a6a6a;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
