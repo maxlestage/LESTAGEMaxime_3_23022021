@@ -164,45 +164,33 @@ header
                 color: #101010
             span
                 color: #595959
-            // i.far.fa-heart
-            //     cursor: pointer
-            //     position: absolute
-            //     right: 9%
-            //     margin-top: 10px
-            //     padding-left: 7px
-            //     padding-right: 7px
-            //     font-size: 25px
-            //     color: #6a6a6a
-            //     background-color: transparent
-            //     transition: all 0.3s ease
-            // i.far.fa-heart:hover
-            //     font-weight: 700 // Permet le passage en plein
-            //     // transition: 2s
-            //     background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
-            //     -webkit-background-clip: text
-            //     -webkit-text-fill-color: transparent
-            //     stroke-dasharray: 12000 
-            svg path
-                fill: transparent
-                stroke-width: 20
-                stroke: black
-                stroke-dasharray: 1500
-                stroke-dashoffset: 0
-            svg:hover path:hover
-                animation: animate-heart 1.2s linear forwards
-
-                @keyframes animate-heart
+            i.far.fa-heart,.fas
+                cursor: pointer
+                position: absolute
+                right: 9%
+                margin-top: 10px
+                padding-left: 7px
+                padding-right: 7px
+                font-size: 25px
+                color: #6a6a6a
+                background-color: transparent
+                transition: all 0.3s ease
+            i.fas
+                opacity: 0
+            i.fas:hover
+                opacity: 1
+                // transition: 2s
+                animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+                background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                animation-name: fadeInOpacity
+                @keyframes fadeInOpacity
                     0%
-                        stroke-dashoffset: 0
-                    40%
-                        stroke-dashoffset: 1500
-                    80%
-                        stroke-dashoffset: 3000
-                        fill: transparent
+                        opacity: 0
+
                     100%
-                        stroke-dashoffset: 3000
-                        fill: url(#MyGradient)
-                        stroke: white
+                        opacity: 1
 
 footer
     display: flex

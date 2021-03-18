@@ -179,31 +179,35 @@ header {
 #restaurants div div span {
   color: #595959;
 }
-#restaurants div div svg path {
-  fill: transparent;
-  stroke-width: 20;
-  stroke: black;
-  stroke-dasharray: 1500;
-  stroke-dashoffset: 0;
+#restaurants div div i.far.fa-heart, #restaurants div div .fas {
+  cursor: pointer;
+  position: absolute;
+  right: 9%;
+  margin-top: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 25px;
+  color: #6a6a6a;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
-#restaurants div div svg:hover path:hover {
-  animation: animate-heart 1.2s linear forwards;
+#restaurants div div i.fas {
+  opacity: 0;
 }
-@keyframes animate-heart {
+#restaurants div div i.fas:hover {
+  opacity: 1;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: fadeInOpacity;
+}
+@keyframes fadeInOpacity {
   0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 1500;
-  }
-  80% {
-    stroke-dashoffset: 3000;
-    fill: transparent;
+    opacity: 0;
   }
   100% {
-    stroke-dashoffset: 3000;
-    fill: url(#MyGradient);
-    stroke: white;
+    opacity: 1;
   }
 }
 
