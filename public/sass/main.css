@@ -186,7 +186,7 @@ header {
   stroke-dasharray: 1500;
   stroke-dashoffset: 0;
 }
-#restaurants div div svg path:hover {
+#restaurants div div svg:hover path:hover {
   animation: animate-heart 1.2s linear forwards;
 }
 @keyframes animate-heart {
@@ -202,8 +202,8 @@ header {
   }
   100% {
     stroke-dashoffset: 3000;
-    fill: url(#my-cool-gradient) white;
-    stroke: transparent;
+    fill: url(#MyGradient);
+    stroke: white;
   }
 }
 
