@@ -138,16 +138,13 @@ header
         padding-left: 1em
     div
         padding-bottom: 10%
-
         div
-            // border: 1px solid black
             width: 90%
             margin: auto
             padding-bottom: 10%
             border-radius: 25px 25px 25px 25px
             margin-bottom: 7%
             box-shadow: 1px 2px 15px 3px #9c9c9c47
-
             span.tag
                 position: absolute
                 right: 9%
@@ -167,23 +164,45 @@ header
                 color: #101010
             span
                 color: #595959
-            i.far.fa-heart
-                cursor: pointer
-                position: absolute
-                right: 9%
-                margin-top: 10px
-                padding-left: 7px
-                padding-right: 7px
-                font-size: 25px
-                color: #6a6a6a
-                background-color: transparent
-                transition: all 0.3s ease
-            i.far.fa-heart:hover
-                font-weight: 700 // Permet le passage en plein
-                transition: .8s
-                background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
-                -webkit-background-clip: text
-                -webkit-text-fill-color: transparent
+            // i.far.fa-heart
+            //     cursor: pointer
+            //     position: absolute
+            //     right: 9%
+            //     margin-top: 10px
+            //     padding-left: 7px
+            //     padding-right: 7px
+            //     font-size: 25px
+            //     color: #6a6a6a
+            //     background-color: transparent
+            //     transition: all 0.3s ease
+            // i.far.fa-heart:hover
+            //     font-weight: 700 // Permet le passage en plein
+            //     // transition: 2s
+            //     background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
+            //     -webkit-background-clip: text
+            //     -webkit-text-fill-color: transparent
+            //     stroke-dasharray: 12000 
+            svg path
+                fill: transparent
+                stroke-width: 20
+                stroke: black
+                stroke-dasharray: 1500
+                stroke-dashoffset: 0
+            svg path:hover
+                animation: animate-heart 1.2s linear forwards
+
+                @keyframes animate-heart
+                    0%
+                        stroke-dashoffset: 0
+                    40%
+                        stroke-dashoffset: 1500
+                    80%
+                        stroke-dashoffset: 3000
+                        fill: transparent
+                    100%
+                        stroke-dashoffset: 3000
+                        fill: url(#my-cool-gradient) white
+                        stroke: transparent
 
 footer
     display: flex
