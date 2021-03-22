@@ -179,7 +179,7 @@ header {
 #restaurants div {
   padding-bottom: 10%;
 }
-#restaurants div div {
+#restaurants div .card {
   width: 90%;
   margin: auto;
   padding-bottom: 10%;
@@ -187,7 +187,7 @@ header {
   margin-bottom: 7%;
   box-shadow: 1px 2px 15px 3px #9c9c9c47;
 }
-#restaurants div div span.tag {
+#restaurants div .card__tag {
   position: absolute;
   right: 9%;
   margin-top: 10px;
@@ -197,20 +197,21 @@ header {
   background-color: #99e2d0;
   border-radius: 2px;
 }
-#restaurants div div img {
+#restaurants div .card__img {
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: 12em;
   object-fit: cover;
 }
-#restaurants div div span {
+#restaurants div .card__title {
   text-decoration: none;
   color: #101010;
+  border: 1px black solid;
 }
-#restaurants div div span {
+#restaurants div .card__description {
   color: #595959;
 }
-#restaurants div div i.far.fa-heart, #restaurants div div .fas {
+#restaurants div .card__heartfar, #restaurants div .card .fas {
   cursor: pointer;
   position: absolute;
   right: 9%;
@@ -222,10 +223,10 @@ header {
   background-color: transparent;
   transition: all 0.3s ease;
 }
-#restaurants div div i.fas {
+#restaurants div .card__heartfas {
   opacity: 0;
 }
-#restaurants div div i.fas:hover {
+#restaurants div .card__heartfas:hover {
   background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
