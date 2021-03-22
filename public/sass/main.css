@@ -227,6 +227,7 @@ header {
 }
 #restaurants div div i.fas:hover {
   background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
