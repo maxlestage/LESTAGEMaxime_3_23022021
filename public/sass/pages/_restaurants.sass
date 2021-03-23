@@ -1,10 +1,59 @@
+header
+    z-index: 2
+    position: fixed
+    top: 0
+    width: 100%
+    background-color: #f6f6f6
+    box-shadow: 0px 5px 7px -7px black
+article
+    z-index: 1
+    margin-top: 51%
+    background-color: white
+    border-radius: 25px 25px 0 0
 .table__img
     z-index: -1
+    top: 5em
+    position: fixed
     img
         width: 100%
 .table
-    z-index: 2
     border: 1px solid black
+    padding-bottom: 12%
     border-radius: 25px 25px 0 0
     h3
         font-family: 'Shrikhand', cursive
+        padding-left: 1em
+    .table__heart
+    &__heartfar ,.fas
+        @include heart
+    &__heartfas
+        opacity: 0
+        &:hover
+            @include hearthover
+    li
+        border: 1px solid black
+        box-shadow: 1px 2px 7px 1px #e6e6e6
+        display: flex
+        justify-content: center
+        border-radius: 15px
+        margin-left: -1em
+        margin-right: 1.5em
+        margin-bottom: 1em
+        height: 4em
+    a
+        display: block
+        width: 23%
+        margin: auto
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-left: 30px
+        padding-right: 30px
+        border-radius: 25px
+        background: linear-gradient(#ef76da, #a45cdb)
+        @include box-shadow
+        color: white
+        text-align: center
+        text-decoration: none
+        a:hover
+            background: linear-gradient(rgb(239 118 218 / 75%), rgb(164 92 219 / 75%))
+            box-shadow: 1px 2px 7px 1px #797979

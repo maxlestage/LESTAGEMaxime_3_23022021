@@ -176,10 +176,10 @@ header {
 #restaurants h3 {
   padding-left: 1em;
 }
-#restaurants div {
+#restaurants .restaurants__cards {
   padding-bottom: 10%;
 }
-#restaurants div .card {
+#restaurants .restaurants__cards .card {
   width: 90%;
   margin: auto;
   padding-bottom: 10%;
@@ -187,7 +187,10 @@ header {
   margin-bottom: 7%;
   box-shadow: 1px 2px 15px 3px #9c9c9c47;
 }
-#restaurants div .card__tag {
+#restaurants .restaurants__cards .card__body {
+  display: flex;
+}
+#restaurants .restaurants__cards .card__tag {
   position: absolute;
   right: 9%;
   margin-top: 10px;
@@ -197,21 +200,24 @@ header {
   background-color: #99e2d0;
   border-radius: 2px;
 }
-#restaurants div .card__img {
+#restaurants .restaurants__cards .card__img {
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: 12em;
   object-fit: cover;
 }
-#restaurants div .card__title {
+#restaurants .restaurants__cards .card__title {
   text-decoration: none;
   color: #101010;
   border: 1px black solid;
+  display: block;
+  padding-bottom: 2%;
+  width: 70%;
 }
-#restaurants div .card__description {
+#restaurants .restaurants__cards .card__description {
   color: #595959;
 }
-#restaurants div .card__heartfar, #restaurants div .card .fas {
+#restaurants .restaurants__cards .card__heartfar, #restaurants .restaurants__cards .card .fas {
   cursor: pointer;
   position: absolute;
   right: 9%;
@@ -223,10 +229,10 @@ header {
   background-color: transparent;
   transition: all 0.3s ease;
 }
-#restaurants div .card__heartfas {
+#restaurants .restaurants__cards .card__heartfas {
   opacity: 0;
 }
-#restaurants div .card__heartfas:hover {
+#restaurants .restaurants__cards .card__heartfas:hover {
   background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -243,20 +249,100 @@ header {
   }
 }
 
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 7px -7px black;
+}
+
+article {
+  z-index: 1;
+  margin-top: 51%;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+}
+
 .table__img {
   z-index: -1;
+  top: 5em;
+  position: fixed;
 }
 .table__img img {
   width: 100%;
 }
 
 .table {
-  z-index: 2;
   border: 1px solid black;
+  padding-bottom: 12%;
   border-radius: 25px 25px 0 0;
 }
 .table h3 {
   font-family: "Shrikhand", cursive;
+  padding-left: 1em;
+}
+.table__heartfar, .table .fas {
+  cursor: pointer;
+  position: absolute;
+  right: 9%;
+  margin-top: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 25px;
+  color: #6a6a6a;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.table__heartfas {
+  opacity: 0;
+}
+.table__heartfas:hover {
+  background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-name: fadeInOpacity;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.table li {
+  border: 1px solid black;
+  box-shadow: 1px 2px 7px 1px #e6e6e6;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: -1em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+  height: 4em;
+}
+.table a {
+  display: block;
+  width: 23%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 25px;
+  background: linear-gradient(#ef76da, #a45cdb);
+  box-shadow: 1px 2px 7px 1px #e6e6e6;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.table a a:hover {
+  background: linear-gradient(rgba(239, 118, 218, 0.75), rgba(164, 92, 219, 0.75));
+  box-shadow: 1px 2px 7px 1px #797979;
 }
 
 .fa-arrow-left {

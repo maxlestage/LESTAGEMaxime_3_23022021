@@ -4,3 +4,27 @@
 
 @mixin box-shadow
     box-shadow: 1px 2px 7px 1px #e6e6e6
+
+@mixin heart
+    cursor: pointer
+    position: absolute
+    right: 9%
+    margin-top: 10px
+    padding-left: 7px
+    padding-right: 7px
+    font-size: 25px
+    color: #6a6a6a
+    background-color: transparent
+    transition: all 0.3s ease
+@mixin hearthover
+    background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
+    background-clip: text
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    animation: slide-top .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    animation-name: fadeInOpacity
+    @keyframes fadeInOpacity
+        0%
+            opacity: 0
+        100%
+            opacity: 1
