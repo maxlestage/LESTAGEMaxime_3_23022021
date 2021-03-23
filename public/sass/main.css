@@ -182,13 +182,16 @@ header {
 #restaurants .restaurants__cards .card {
   width: 90%;
   margin: auto;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   border-radius: 25px 25px 25px 25px;
   margin-bottom: 7%;
   box-shadow: 1px 2px 15px 3px #9c9c9c47;
 }
 #restaurants .restaurants__cards .card__body {
   display: flex;
+}
+#restaurants .restaurants__cards .card__lien {
+  text-decoration: none;
 }
 #restaurants .restaurants__cards .card__tag {
   position: absolute;
@@ -206,10 +209,13 @@ header {
   height: 12em;
   object-fit: cover;
 }
+#restaurants .restaurants__cards .card__text {
+  padding-left: 5%;
+  padding-top: 2%;
+}
 #restaurants .restaurants__cards .card__title {
   text-decoration: none;
   color: #101010;
-  border: 1px black solid;
   display: block;
   padding-bottom: 2%;
   width: 70%;
@@ -228,6 +234,7 @@ header {
   color: #6a6a6a;
   background-color: transparent;
   transition: all 0.3s ease;
+  margin-top: -40px;
 }
 #restaurants .restaurants__cards .card__heartfas {
   opacity: 0;
