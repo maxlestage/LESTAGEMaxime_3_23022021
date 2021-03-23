@@ -66,7 +66,7 @@ header {
 }
 #localize h2 {
   font-size: 1em;
-  color: #4d4d4d s;
+  color: #4d4d4d;
 }
 
 #info {
@@ -288,6 +288,9 @@ article {
   font-family: "Shrikhand", cursive;
   padding-left: 1em;
   padding-top: 5%;
+}
+.table__heart {
+  color: blue;
 }
 .table__heartfar, .table .fas {
   cursor: pointer;
