@@ -30,14 +30,28 @@ article
     &__heart
         color: blue
     &__heartfar ,.fas
-        @include heart
-        margin-top: -45px
+        cursor: pointer
+        position: absolute
+        right: 9%
+        padding-left: 7px
+        padding-right: 7px
+        font-size: 25px
+        color: #6a6a6a
+        background-color: transparent
+        transition: all 0.3s ease
+        margin-top: -40px
     &__heartfas
         opacity: 0
         &:hover
-            @include hearthover
-            background-clip: text
-            -webkit-background-clip: text
+            background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
+            -webkit-text-fill-color: transparent
+            animation: slide-top .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+            animation-name: fadeInOpacity
+            @keyframes fadeInOpacity
+                0%
+                    opacity: 0
+                100%
+                    opacity: 1
     li
         // border: 1px solid black
         box-shadow: 1px 2px 7px 1px #b1b1b1

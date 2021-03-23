@@ -226,7 +226,6 @@ header {
   cursor: pointer;
   position: absolute;
   right: 9%;
-  margin-top: 10px;
   padding-left: 7px;
   padding-right: 7px;
   font-size: 25px;
@@ -243,8 +242,6 @@ header {
   -webkit-text-fill-color: transparent;
   animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-name: fadeInOpacity;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 @keyframes fadeInOpacity {
   0% {
@@ -296,14 +293,13 @@ article {
   cursor: pointer;
   position: absolute;
   right: 9%;
-  margin-top: 10px;
   padding-left: 7px;
   padding-right: 7px;
   font-size: 25px;
   color: #6a6a6a;
   background-color: transparent;
   transition: all 0.3s ease;
-  margin-top: -45px;
+  margin-top: -40px;
 }
 .table__heartfas {
   opacity: 0;
@@ -313,8 +309,6 @@ article {
   -webkit-text-fill-color: transparent;
   animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-name: fadeInOpacity;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 @keyframes fadeInOpacity {
   0% {
