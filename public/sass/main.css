@@ -286,12 +286,13 @@ article {
   font-family: "Shrikhand", cursive;
   padding-left: 1em;
   padding-top: 5%;
+  font-size: 1.6em;
 }
 .table__heartfar, .table .fas {
   cursor: pointer;
   position: absolute;
   right: 9%;
-  margin-top: -40px;
+  margin-top: -55px;
   padding-left: 7px;
   padding-right: 7px;
   font-size: 25px;
@@ -317,9 +318,9 @@ article {
     opacity: 1;
   }
 }
-.table li {
+.table .entrees__list, .table .plats__list, .table .desserts__list {
   box-shadow: 1px 2px 7px 1px #b1b1b1;
-  display: flex;
+  display: block;
   justify-content: center;
   border-radius: 15px;
   margin-left: -1em;
@@ -328,6 +329,31 @@ article {
   height: 4em;
   background-color: white;
 }
+
+span.table__titlemenu {
+  padding-left: 1em;
+  padding-bottom: 12%;
+}
+
+span.table__titlemenu::after {
+  content: "";
+  display: block;
+  width: 36px;
+  padding-top: 3px;
+  border-bottom: 3px solid #99e2d0;
+  position: relative;
+  left: 16px;
+}
+
+.fa-arrow-left {
+  cursor: pointer;
+  position: absolute;
+  left: 3%;
+  margin-top: 35px;
+  font-size: 20px;
+  color: #6a6a6a;
+}
+
 .table a {
   display: block;
   width: 23%;
@@ -347,26 +373,6 @@ article {
 .table a:hover {
   background: linear-gradient(rgba(239, 118, 218, 0.75), rgba(164, 92, 219, 0.75));
   box-shadow: 1px 2px 7px 1px #797979;
-}
-
-span.table__titlemenu {
-  padding-left: 1em;
-  padding-bottom: 12%;
-  /* border-bottom: 12px; */
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: red;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 5px;
-}
-
-.fa-arrow-left {
-  cursor: pointer;
-  position: absolute;
-  left: 3%;
-  margin-top: 35px;
-  font-size: 20px;
-  color: #6a6a6a;
 }
 
 /*# sourceMappingURL=main.css.map */
