@@ -288,7 +288,7 @@ article {
   padding-top: 5%;
   font-size: 1.6em;
 }
-.table__heartfar, .table .fas {
+.table__heartfar, .table .heartcolour {
   cursor: pointer;
   position: absolute;
   right: 9%;
@@ -323,19 +323,18 @@ article {
   display: block;
   justify-content: center;
   border-radius: 15px;
-  margin-left: -1em;
+  margin-left: -4%;
   margin-right: 1.5em;
   margin-bottom: 1em;
   height: 4em;
   background-color: white;
+  width: 100%;
 }
-
-span.table__titlemenu {
+.table span.table__titlemenu {
   padding-left: 1em;
   padding-bottom: 12%;
 }
-
-span.table__titlemenu::after {
+.table span.table__titlemenu::after {
   content: "";
   display: block;
   width: 36px;
