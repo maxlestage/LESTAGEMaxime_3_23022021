@@ -344,6 +344,39 @@ article {
   left: 16px;
 }
 
+.entrees__textflex {
+  width: 98%;
+  margin: auto;
+  height: 4em;
+}
+
+span.entrees__spantitle {
+  display: flex;
+  margin-bottom: 10px;
+  padding-top: 1.5%;
+}
+
+span.entrees__spandescription {
+  width: 85%;
+}
+
+span.entrees__spanprice {
+  float: right;
+  padding-right: 2%;
+}
+
+.entrees__spanok:hover {
+  display: block;
+  width: 18%;
+  margin-left: 82%;
+  background-color: aquamarine;
+  z-index: 3;
+  margin-top: -12.6%;
+  padding-bottom: 8.8%;
+  border-radius: 0px 12px 12px 0;
+  color: white;
+}
+
 .fa-arrow-left {
   cursor: pointer;
   position: absolute;
