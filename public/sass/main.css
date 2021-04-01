@@ -365,16 +365,29 @@ span.entrees__spanprice {
   padding-right: 2%;
 }
 
+.entrees__spanok {
+  border: 1px solid black;
+  display: block;
+  margin-top: -65px;
+  height: 4em;
+}
+
 .entrees__spanok:hover {
   display: block;
   width: 18%;
   margin-left: 82%;
   background-color: aquamarine;
   z-index: 3;
-  margin-top: -12.6%;
-  padding-bottom: 8.8%;
   border-radius: 0px 12px 12px 0;
   color: white;
+}
+
+i.fas.fa-check {
+  color: aquamarine;
+  border: 3px Solid white;
+  border-radius: 12px;
+  padding: 2px;
+  background-color: white;
 }
 
 .fa-arrow-left {
