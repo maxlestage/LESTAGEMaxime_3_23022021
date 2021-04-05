@@ -65,6 +65,7 @@ article
         height: 4em
         background-color: white
         width: 100%
+        cursor: pointer
         // .entrees__list:hover, .plats__list:hover, .desserts__list:hover
 
     // Positionner le trait sous le texte : 
@@ -127,7 +128,8 @@ span.entrees__spanprice
     // margin-top: -65px
     height: 4em
     transition: width 0.3s ease-in-out
-    width: 25px
+    width: 0px
+    background-color: aquamarine
 
 .entrees__list:hover .entrees__spanok
     width: 18%
@@ -138,10 +140,17 @@ span.entrees__spanprice
     // padding-bottom: 8.8%
     border-radius: 0px 12px 12px 0
     color: white
+    // overflow: hidden
+    // white-space: nowrap
+    // text-overflow: ellipse
+    i.fas.check
+        opacity: 1
 
-i.fas.fa-check
+i.fas.check
+    opacity: 0
     color: aquamarine
-    border: 3px Solid white
+    // border: 3px Solid white
     border-radius: 12px
     padding: 2px
     background-color: white
+    height: 25%
