@@ -320,7 +320,7 @@ article {
 }
 .table .entrees__list, .table .plats__list, .table .desserts__list {
   box-shadow: 1px 2px 7px 1px #b1b1b1;
-  display: block;
+  display: flex;
   justify-content: center;
   border-radius: 15px;
   margin-left: -4%;
@@ -345,7 +345,8 @@ article {
 }
 
 .entrees__textflex {
-  width: 98%;
+  width: 100%;
+  display: flex;
   margin: auto;
   height: 4em;
 }
@@ -366,16 +367,15 @@ span.entrees__spanprice {
 }
 
 .entrees__spanok {
+  display: flex;
   border: 1px solid black;
-  display: block;
-  margin-top: -65px;
   height: 4em;
+  transition: width 0.3s ease-in-out;
+  width: 25px;
 }
 
 .entrees__spanok:hover {
-  display: block;
   width: 18%;
-  margin-left: 82%;
   background-color: aquamarine;
   z-index: 3;
   border-radius: 0px 12px 12px 0;
@@ -388,6 +388,14 @@ i.fas.fa-check {
   border-radius: 12px;
   padding: 2px;
   background-color: white;
+}
+
+i.fas.fa-check.check-hover {
+  display: none;
+}
+
+i.fas.fa-check:hover {
+  display: block;
 }
 
 .fa-arrow-left {

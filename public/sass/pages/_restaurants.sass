@@ -56,7 +56,7 @@ article
 
     .entrees__list, .plats__list, .desserts__list
         box-shadow: 1px 2px 7px 1px #b1b1b1
-        display: block
+        display: flex
         justify-content: center
         border-radius: 15px
         margin-left: -4%
@@ -87,10 +87,24 @@ article
         left: 16px
 
 .entrees__textflex
-    width: 98%
+    width: 100%
+    display: flex
     // border: 1px solid black
     margin: auto
     height: 4em
+
+// .entrees__textflex:hover
+//     display: block
+//     width: 80%
+//     // margin-left: 82%
+//     background-color: aquamarine
+//     // z-index: 3
+//     // margin-top: -12.6%
+//     // padding-bottom: 8.8%
+//     border-radius: 0px 12px 12px 0
+//     color: white
+
+// animation sur le li 
 span.entrees__spantitle
     // border: 1px solid
     display: flex
@@ -108,15 +122,16 @@ span.entrees__spanprice
     padding-right: 2%
 
 .entrees__spanok
+    display: flex
     border: 1px solid black
-    display: block
-    margin-top: -65px
+    // margin-top: -65px
     height: 4em
+    transition: width 0.3s ease-in-out
+    width: 25px
 
 .entrees__spanok:hover
-    display: block
     width: 18%
-    margin-left: 82%
+    // margin-left: 82%
     background-color: aquamarine
     z-index: 3
     // margin-top: -12.6%
@@ -130,3 +145,9 @@ i.fas.fa-check
     border-radius: 12px
     padding: 2px
     background-color: white
+
+i.fas.fa-check.check-hover
+    display: none
+
+i.fas.fa-check:hover
+    display: block
