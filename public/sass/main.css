@@ -374,7 +374,7 @@ span.entrees__spanprice {
   width: 25px;
 }
 
-.entrees__spanok:hover {
+.entrees__list:hover .entrees__spanok {
   width: 18%;
   background-color: aquamarine;
   z-index: 3;
@@ -388,14 +388,6 @@ i.fas.fa-check {
   border-radius: 12px;
   padding: 2px;
   background-color: white;
-}
-
-i.fas.fa-check.check-hover {
-  display: none;
-}
-
-i.fas.fa-check:hover {
-  display: block;
 }
 
 .fa-arrow-left {
