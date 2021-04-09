@@ -350,6 +350,7 @@ article {
   display: flex;
   margin: auto;
   height: 4em;
+  overflow: hidden;
 }
 
 span.entrees__spantitle {
@@ -369,17 +370,16 @@ span.entrees__spanprice {
 
 .entrees__spanok {
   display: flex;
-  border: 1px solid black;
   height: 4em;
   transition: width 0.3s ease-in-out;
   width: 0px;
-  background-color: aquamarine;
+  background-color: #99e2d0;
   border-radius: 0px 12px 12px 0;
 }
 
 .entrees__list:hover .entrees__spanok {
   width: 18%;
-  background-color: aquamarine;
+  background-color: #99e2d0;
   border-radius: 0px 12px 12px 0;
   color: white;
 }
@@ -389,7 +389,7 @@ span.entrees__spanprice {
 
 i.fas.check {
   opacity: 0;
-  color: aquamarine;
+  color: #99e2d0;
   border-radius: 12px;
   padding: 2px;
   background-color: white;
