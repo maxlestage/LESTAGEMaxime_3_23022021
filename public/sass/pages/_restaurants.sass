@@ -84,31 +84,38 @@ article
 
 .entrees__textflex
     width: 100%
-    display: flex
+    display: block
     // border: 1px solid black
     margin: auto
     height: 4em
     overflow: hidden
+    padding-left: 10px
 
 // animation sur le li 
 span.entrees__spantitle
     // border: 1px solid
-    display: flex
-    margin-bottom: 10px
-    padding-top: 1.5%
+    display: block
+    // margin-bottom: 10px
+    // padding-top: 1.5%
 
 span.entrees__spandescription
-    width: 85%
+    width: 100%
+    margin-top: 8px
+    display: block
 
 span.entrees__spanprice
+    height: 100%
     float: right
     padding-right: 2%
+    display: block
+    margin-top: -32px
+    margin-right: 8px
 
 .entrees__spanok
     display: flex
     // border: 1px solid black
     height: 4em
-    transition: width 0.3s ease-in-out
+    transition: width 1s ease-in-out
     width: 0px
     background-color: #99e2d0
     border-radius: 0px 12px 12px 0
@@ -119,11 +126,16 @@ span.entrees__spanprice
     // z-index: 3
     border-radius: 0px 12px 12px 0
     color: white
-    // overflow: hidden
-    // white-space: nowrap
-    // text-overflow: ellipse
     i.fas.check
         opacity: 1
+        transition: opacity 1s ease-in-out // Rotation
+        // rotate 
+
+.entrees__list:hover
+    .entrees__spandescription
+        @include overflow
+    .entrees__spantitle
+        @include overflow
 
 i.fas.check
     opacity: 0
@@ -133,3 +145,12 @@ i.fas.check
     background-color: white
     height: 25%
     margin: auto
+    transition: opacity 0.9s ease-in-out // Rotation
+
+.overflow
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    width: 65%
+    height: 4em
+    margin-top: 8px

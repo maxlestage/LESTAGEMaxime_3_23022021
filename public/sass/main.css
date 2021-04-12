@@ -347,31 +347,36 @@ article {
 
 .entrees__textflex {
   width: 100%;
-  display: flex;
+  display: block;
   margin: auto;
   height: 4em;
   overflow: hidden;
+  padding-left: 10px;
 }
 
 span.entrees__spantitle {
-  display: flex;
-  margin-bottom: 10px;
-  padding-top: 1.5%;
+  display: block;
 }
 
 span.entrees__spandescription {
-  width: 85%;
+  width: 100%;
+  margin-top: 8px;
+  display: block;
 }
 
 span.entrees__spanprice {
+  height: 100%;
   float: right;
   padding-right: 2%;
+  display: block;
+  margin-top: -32px;
+  margin-right: 8px;
 }
 
 .entrees__spanok {
   display: flex;
   height: 4em;
-  transition: width 0.3s ease-in-out;
+  transition: width 1s ease-in-out;
   width: 0px;
   background-color: #99e2d0;
   border-radius: 0px 12px 12px 0;
@@ -385,6 +390,18 @@ span.entrees__spanprice {
 }
 .entrees__list:hover .entrees__spanok i.fas.check {
   opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.entrees__list:hover .entrees__spandescription {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.entrees__list:hover .entrees__spantitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 i.fas.check {
@@ -395,6 +412,16 @@ i.fas.check {
   background-color: white;
   height: 25%;
   margin: auto;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 65%;
+  height: 4em;
+  margin-top: 8px;
 }
 
 .fa-arrow-left {
