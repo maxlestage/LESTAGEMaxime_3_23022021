@@ -407,10 +407,10 @@ span.entrees__spanprice {
 
 i.fas.check {
   opacity: 0;
-  color: #99e2d0;
+  color: white;
   border-radius: 12px;
   padding: 2px;
-  background-color: white;
+  background-color: #99e2d0;
   height: 25%;
   margin: auto;
   transform: rotate(0deg);
