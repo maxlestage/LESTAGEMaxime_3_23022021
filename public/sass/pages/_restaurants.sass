@@ -128,7 +128,8 @@ span.entrees__spanprice
     color: white
     i.fas.check
         opacity: 1
-        transition: opacity 1s ease-in-out // Rotation
+        transform: rotate(-360deg)
+        transition: all 0.9s ease-in-out // Rotation
 
 .entrees__list:hover
     .entrees__spandescription
@@ -136,12 +137,9 @@ span.entrees__spanprice
     .entrees__spantitle
         @include overflow
 
-.entrees__list:hover .check
-    transform: rotate(360deg)
-
-.check
-    // transform: rotate(360deg)
-    transition: transform 1ms
+// .entrees__list:hover .check-roll
+//     transform: rotate(360deg)
+//     transition: rotate 900ms ease-in-out
 
 i.fas.check
     opacity: 0
@@ -152,7 +150,7 @@ i.fas.check
     height: 25%
     margin: auto
     transform: rotate(0deg)
-    transition: all 0.9s ease-in-out // Rotation
+    transition: all 0.9s ease-in-out // Rotation + opacity
 
 .overflow
     overflow: hidden

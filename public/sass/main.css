@@ -390,7 +390,8 @@ span.entrees__spanprice {
 }
 .entrees__list:hover .entrees__spanok i.fas.check {
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  transform: rotate(-360deg);
+  transition: all 0.9s ease-in-out;
 }
 
 .entrees__list:hover .entrees__spandescription {
@@ -402,14 +403,6 @@ span.entrees__spanprice {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.entrees__list:hover .check {
-  transform: rotate(360deg);
-}
-
-.check {
-  transition: transform 1ms;
 }
 
 i.fas.check {
