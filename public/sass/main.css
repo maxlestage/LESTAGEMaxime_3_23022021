@@ -404,6 +404,14 @@ span.entrees__spanprice {
   text-overflow: ellipsis;
 }
 
+.entrees__list:hover .check {
+  transform: rotate(360deg);
+}
+
+.check {
+  transition: transform 1ms;
+}
+
 i.fas.check {
   opacity: 0;
   color: #99e2d0;
@@ -412,7 +420,8 @@ i.fas.check {
   background-color: white;
   height: 25%;
   margin: auto;
-  transition: opacity 0.9s ease-in-out;
+  transform: rotate(0deg);
+  transition: all 0.9s ease-in-out;
 }
 
 .overflow {
