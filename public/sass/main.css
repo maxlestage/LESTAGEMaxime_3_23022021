@@ -287,7 +287,7 @@ article {
   font-family: "Shrikhand", cursive;
   padding-left: 1em;
   padding-top: 5%;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 .table__heartfar, .table .heartcolour {
   cursor: pointer;
@@ -355,6 +355,96 @@ article {
   margin-top: 8px;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .table h3 {
+    font-size: 1.6em;
+  }
+
+  .entrees__ul, .plats__ul, .desserts__ul {
+    padding-left: 9%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+
+  .table .entrees__list, .table .plats__list, .table .desserts__list {
+    margin-bottom: 1.3em;
+  }
+
+  article {
+    z-index: 1;
+    margin-top: 70%;
+    background-color: #f6f6f6;
+    border-radius: 25px 25px 0 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .table__heartfar, .table .heartcolour {
+    right: 13%;
+  }
+}
+@media (min-width: 1200px) {
+  .table h3 {
+    font-size: 2em;
+  }
+
+  .entrees__ul, .plats__ul, .desserts__ul {
+    padding-left: 9%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+
+  .table .entrees__list, .table .plats__list, .table .desserts__list {
+    margin-bottom: 1.3em;
+    height: 5em;
+  }
+
+  article {
+    margin-top: 25%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .table__heartfar, .table .heartcolour {
+    right: 13%;
+    font-size: 2.5em;
+    margin-top: -68px;
+  }
+
+  .table span.table__titlemenu {
+    font-size: 1.3em;
+  }
+
+  .table span.table__titlemenu::after {
+    width: 45px;
+    left: 20px;
+  }
+
+  .entrees__spanok, .plats__spanok, .desserts__spanok {
+    height: 5em !important;
+  }
+
+  .entrees__list:hover .entrees__spanok .plats__list:hover .plats__spanok .desserts__list:hover .desserts__spanok, i.fas.check {
+    font-size: 2.2em !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .table h3 {
+    font-size: 1.6em;
+  }
+
+  .entrees__ul, .plats__ul, .desserts__ul {
+    padding-left: 9%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+
+  .table .entrees__list, .table .plats__list, .table .desserts__list {
+    margin-bottom: 1.3em;
+  }
+}
 .fa-arrow-left {
   cursor: pointer;
   position: absolute;
