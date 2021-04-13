@@ -281,6 +281,7 @@ article {
 .table {
   padding-bottom: 12%;
   border-radius: 25px 25px 0 0;
+  padding-right: 13px;
 }
 .table h3 {
   font-family: "Shrikhand", cursive;
