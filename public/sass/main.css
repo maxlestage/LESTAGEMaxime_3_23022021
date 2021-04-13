@@ -345,6 +345,114 @@ article {
   left: 16px;
 }
 
+.overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 65%;
+  height: 4em;
+  margin-top: 8px;
+}
+
+.fa-arrow-left {
+  cursor: pointer;
+  position: absolute;
+  left: 3%;
+  margin-top: 35px;
+  font-size: 20px;
+  color: #6a6a6a;
+}
+
+.table a {
+  display: block;
+  width: 23%;
+  margin: auto;
+  margin-top: 12%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 25px;
+  background: linear-gradient(#ef76da, #a45cdb);
+  box-shadow: 1px 2px 7px 1px #e6e6e6;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.table a:hover {
+  background: linear-gradient(rgba(239, 118, 218, 0.75), rgba(164, 92, 219, 0.75));
+  box-shadow: 1px 2px 7px 1px #797979;
+}
+
+i.fas.check {
+  opacity: 0;
+  color: white;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: all 0.9s ease-in-out;
+  font-size: 1.5em;
+}
+
+.desserts__textflex {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 4em;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+span.desserts__spantitle {
+  display: block;
+}
+
+span.desserts__spandescription {
+  width: 100%;
+  margin-top: 8px;
+  display: block;
+}
+
+span.desserts__spanprice {
+  height: 100%;
+  float: right;
+  padding-right: 2%;
+  display: block;
+  margin-top: -32px;
+  margin-right: 8px;
+}
+
+.desserts__spanok {
+  display: flex;
+  height: 4em;
+  transition: width 1s ease-in-out;
+  width: 0px;
+  background-color: #99e2d0;
+  border-radius: 0px 12px 12px 0;
+}
+
+.desserts__list:hover .desserts__spanok {
+  width: 18%;
+  background-color: #99e2d0;
+  border-radius: 0px 12px 12px 0;
+  color: white;
+}
+.desserts__list:hover .desserts__spanok i.fas.check {
+  opacity: 1;
+  transform: rotate(-360deg);
+  transition: all 0.9s ease-in-out;
+}
+
+.desserts__list:hover .desserts__spandescription {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.desserts__list:hover .desserts__spantitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .entrees__textflex {
   width: 100%;
   display: block;
@@ -405,56 +513,64 @@ span.entrees__spanprice {
   text-overflow: ellipsis;
 }
 
-i.fas.check {
-  opacity: 0;
-  color: white;
-  /* border-radius: 12px; */
-  /* padding: 2px; */
-  /* background-color: #99e2d0; */
-  /* height: 25%; */
-  margin: auto;
-  transform: rotate(0deg);
-  transition: all 0.9s ease-in-out;
-  font-size: 1.5em;
-}
-
-.overflow {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 65%;
-  height: 4em;
-  margin-top: 8px;
-}
-
-.fa-arrow-left {
-  cursor: pointer;
-  position: absolute;
-  left: 3%;
-  margin-top: 35px;
-  font-size: 20px;
-  color: #6a6a6a;
-}
-
-.table a {
+.plats__textflex {
+  width: 100%;
   display: block;
-  width: 23%;
   margin: auto;
-  margin-top: 12%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 25px;
-  background: linear-gradient(#ef76da, #a45cdb);
-  box-shadow: 1px 2px 7px 1px #e6e6e6;
-  color: white;
-  text-align: center;
-  text-decoration: none;
+  height: 4em;
+  overflow: hidden;
+  padding-left: 10px;
 }
-.table a:hover {
-  background: linear-gradient(rgba(239, 118, 218, 0.75), rgba(164, 92, 219, 0.75));
-  box-shadow: 1px 2px 7px 1px #797979;
+
+span.plats__spantitle {
+  display: block;
+}
+
+span.plats__spandescription {
+  width: 100%;
+  margin-top: 8px;
+  display: block;
+}
+
+span.plats__spanprice {
+  height: 100%;
+  float: right;
+  padding-right: 2%;
+  display: block;
+  margin-top: -32px;
+  margin-right: 8px;
+}
+
+.plats__spanok {
+  display: flex;
+  height: 4em;
+  transition: width 1s ease-in-out;
+  width: 0px;
+  background-color: #99e2d0;
+  border-radius: 0px 12px 12px 0;
+}
+
+.plats__list:hover .plats__spanok {
+  width: 18%;
+  background-color: #99e2d0;
+  border-radius: 0px 12px 12px 0;
+  color: white;
+}
+.plats__list:hover .plats__spanok i.fas.check {
+  opacity: 1;
+  transform: rotate(-360deg);
+  transition: all 0.9s ease-in-out;
+}
+
+.plats__list:hover .plats__spandescription {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.plats__list:hover .plats__spantitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=main.css.map */
