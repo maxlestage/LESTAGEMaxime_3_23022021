@@ -779,8 +779,8 @@ span.plats__spanprice {
 
 body {
   background-color: white;
-  Animation-name: fade;
-  Animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
 }
 
 @keyframes fade {
@@ -790,6 +790,94 @@ body {
   to {
     Opacity: 1;
   }
+}
+.spin-container {
+  text-align: center;
+  margin-top: 100px;
+}
+.spin-container .spin {
+  border: 3px solid #FF79DA;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
+  animation-duration: 3s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.spin-container #loader2 {
+  border: 3px solid #9356DC;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  top: -216px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
+  animation-duration: 3s;
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.spin-container #loader3 {
+  border: 3px solid #99E2D0;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  top: -452px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
+  animation-duration: 3s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.spin-container #loader4 {
+  border: 3px solid #FF79DA;
+  width: 260px;
+  height: 260px;
+  position: relative;
+  top: -708px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
+  animation-duration: 3s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.spin-container #text {
+  /* Shrikhand */
+  font-family: "Shrikhand", cursive;
+  color: #000;
+  font-size: 2em;
+  position: relative;
+  top: -857px;
 }
 
 /*# sourceMappingURL=main.css.map */
