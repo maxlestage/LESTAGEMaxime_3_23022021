@@ -777,19 +777,6 @@ span.plats__spanprice {
   text-overflow: ellipsis;
 }
 
-body {
-  animation-name: fade;
-  animation-duration: 4s;
-}
-
-@keyframes fade {
-  from {
-    Opacity: 0;
-  }
-  to {
-    Opacity: 1;
-  }
-}
 .spin-container {
   text-align: center;
   padding-top: 300px;
@@ -910,6 +897,55 @@ body {
   font-size: 2em;
   position: relative;
   top: -857px;
+}
+
+.fondu--1 {
+  animation: fondu 4s;
+}
+
+.fondu--2 {
+  animation: fondu 5.3s;
+}
+
+.fondu--3 {
+  animation: fondu 5.6s;
+}
+
+.fondu--4 {
+  animation: fondu 5.9s;
+}
+
+.fondu--5 {
+  animation: fondu 10.2s;
+}
+
+.fondu--6 {
+  animation: fondu 10.5s;
+}
+
+.fondu--7 {
+  animation: fondu 10.8s;
+}
+
+.fondu--8 {
+  animation: fondu 15.1s;
+}
+
+.fondu--9 {
+  animation: fondu 15.4s;
+}
+
+.fondu--10 {
+  animation: fondu 15.7s;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
