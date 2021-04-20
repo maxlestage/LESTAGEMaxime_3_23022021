@@ -778,7 +778,6 @@ span.plats__spanprice {
 }
 
 body {
-  background-color: white;
   animation-name: fade;
   animation-duration: 4s;
 }
@@ -793,7 +792,26 @@ body {
 }
 .spin-container {
   text-align: center;
-  margin-top: 100px;
+  padding-top: 300px;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #fff;
+  animation: hidebackground 3s forwards;
+}
+@keyframes hidebackground {
+  0% {
+    z-index: 100;
+  }
+  99% {
+    z-index: 100;
+  }
+  100% {
+    z-index: -12;
+    visibility: hidden;
+  }
 }
 .spin-container .spin {
   border: 3px solid #FF79DA;
@@ -804,13 +822,30 @@ body {
   border-left-color: transparent;
   border-right-color: transparent;
   animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
-  animation-duration: 3s;
 }
 @keyframes rotate {
-  0% {
+  from {
     transform: rotateZ(-360deg);
   }
-  100% {
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+.spin-container #loader {
+  border: 3px solid #FF79DA;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate 3s cubic-bezier(0.26, 1.36, 0.74, -0.29);
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(-360deg);
+  }
+  to {
     transform: rotateZ(0deg);
   }
 }
@@ -822,14 +857,13 @@ body {
   top: -216px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
-  animation-duration: 3s;
+  animation: rotate2 3s cubic-bezier(0.26, 1.36, 0.74, -0.29);
 }
 @keyframes rotate2 {
-  0% {
+  from {
     transform: rotateZ(360deg);
   }
-  100% {
+  to {
     transform: rotateZ(0deg);
   }
 }
@@ -841,14 +875,13 @@ body {
   top: -452px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
-  animation-duration: 3s;
+  animation: rotate 3s cubic-bezier(0.26, 1.36, 0.74, -0.29);
 }
 @keyframes rotate {
-  0% {
+  from {
     transform: rotateZ(-360deg);
   }
-  100% {
+  to {
     transform: rotateZ(0deg);
   }
 }
@@ -860,14 +893,13 @@ body {
   top: -708px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29);
-  animation-duration: 3s;
+  animation: rotate2 3s cubic-bezier(0.26, 1.36, 0.74, -0.29);
 }
-@keyframes rotate {
-  0% {
-    transform: rotateZ(-360deg);
+@keyframes rotate2 {
+  from {
+    transform: rotateZ(360deg);
   }
-  100% {
+  to {
     transform: rotateZ(0deg);
   }
 }
