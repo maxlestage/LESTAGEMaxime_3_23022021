@@ -1,3 +1,4 @@
+/* Shrikhand */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* ROBOTO  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -900,43 +901,43 @@ span.plats__spanprice {
 }
 
 .fondu--1 {
-  animation: fondu 4s;
+  animation: fondu 1s;
 }
 
 .fondu--2 {
-  animation: fondu 5.3s;
+  animation: fondu 2s;
 }
 
 .fondu--3 {
-  animation: fondu 5.6s;
+  animation: fondu 3s;
 }
 
 .fondu--4 {
-  animation: fondu 5.9s;
+  animation: fondu 4s;
 }
 
 .fondu--5 {
-  animation: fondu 10.2s;
+  animation: fondu 5s;
 }
 
 .fondu--6 {
-  animation: fondu 10.5s;
+  animation: fondu 6s;
 }
 
 .fondu--7 {
-  animation: fondu 10.8s;
+  animation: fondu 7s;
 }
 
 .fondu--8 {
-  animation: fondu 15.1s;
+  animation: fondu 8s;
 }
 
 .fondu--9 {
-  animation: fondu 15.4s;
+  animation: fondu 9s;
 }
 
 .fondu--10 {
-  animation: fondu 15.7s;
+  animation: fondu 10s;
 }
 
 @keyframes fondu {
