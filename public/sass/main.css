@@ -3,7 +3,6 @@
 /* ROBOTO  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 header {
-  /* Shrikhand */
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: center;
@@ -105,7 +104,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 25px;
-  background: linear-gradient(#ef76da, #a45cdb);
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 1px 2px 7px 1px #e6e6e6;
   color: white;
   text-align: center;
@@ -138,7 +137,7 @@ header {
   width: 2%;
   border-radius: 50%;
   padding: 2.5px 9px;
-  background: #9356dc;
+  background: #9356DC;
   height: 2%;
   justify-content: center;
   color: #fff;
@@ -161,7 +160,7 @@ header {
   color: black;
 }
 #fonctionnement a:hover, #fonctionnement .fas:hover {
-  color: #9457dc;
+  color: #9356DC;
   background-color: #f5edff;
   text-decoration: none;
 }
@@ -198,7 +197,7 @@ header {
   padding-left: 7px;
   padding-right: 7px;
   color: #1b9677;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 2px;
 }
 #restaurants .restaurants__cards .card__img {
@@ -239,7 +238,7 @@ header {
   opacity: 0;
 }
 #restaurants .restaurants__cards .card__heartfas:hover {
-  background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+  background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -306,7 +305,7 @@ article {
   opacity: 0;
 }
 .table__heartfas:hover {
-  background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+  background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -342,7 +341,7 @@ article {
   display: block;
   width: 36px;
   padding-top: 3px;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid #99E2D0;
   position: relative;
   left: 16px;
 }
@@ -465,7 +464,7 @@ article {
     padding-left: 7px;
     padding-right: 7px;
     color: #1b9677;
-    background-color: #99e2d0;
+    background-color: #99E2D0;
     border-radius: 2px;
   }
 
@@ -575,7 +574,7 @@ article {
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 25px;
-  background: linear-gradient(#ef76da, #a45cdb);
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 1px 2px 7px 1px #e6e6e6;
   color: white;
   text-align: center;
@@ -629,13 +628,13 @@ span.desserts__spanprice {
   height: 4em;
   transition: width 1s ease-in-out;
   width: 0px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0px 12px 12px 0;
 }
 
 .desserts__list:hover .desserts__spanok {
   width: 18%;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0px 12px 12px 0;
   color: white;
 }
@@ -690,13 +689,13 @@ span.entrees__spanprice {
   height: 4em;
   transition: width 1s ease-in-out;
   width: 0px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0px 12px 12px 0;
 }
 
 .entrees__list:hover .entrees__spanok {
   width: 18%;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0px 12px 12px 0;
   color: white;
 }
@@ -751,13 +750,13 @@ span.plats__spanprice {
   height: 4em;
   transition: width 1s ease-in-out;
   width: 0px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0px 12px 12px 0;
 }
 
 .plats__list:hover .plats__spanok {
   width: 18%;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0px 12px 12px 0;
   color: white;
 }

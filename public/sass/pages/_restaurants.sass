@@ -25,7 +25,7 @@ article
     border-radius: 25px 25px 0 0
     padding-right: 13px
     h3
-        font-family: 'Shrikhand', cursive
+        @include shrikhand
         padding-left: 1em
         padding-top: 5%
         font-size: 1.2em
@@ -44,7 +44,7 @@ article
     &__heartfas
         opacity: 0
         &:hover
-            background: -webkit-linear-gradient(0deg,#9356dc,#ff79da)
+            background: -webkit-linear-gradient(0deg, $primaire, $secondaire)
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
             animation: slide-top .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
@@ -79,7 +79,7 @@ article
         display: block
         width: 36px
         padding-top: 3px
-        border-bottom: 3px solid #99e2d0
+        border-bottom: 3px solid $tertiaire
         position: relative
         left: 16px
 

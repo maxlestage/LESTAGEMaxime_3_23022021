@@ -19,7 +19,7 @@
             visibility: hidden
 
     .spin
-        border: 3px solid #FF79DA
+        border: 3px solid $secondaire
         width: 200px
         height: 200px
         margin: 0 auto
@@ -33,7 +33,7 @@
                 transform: rotateZ(0deg)
 
     #loader
-        border: 3px solid #FF79DA
+        border: 3px solid $secondaire
         width: 200px
         height: 200px
         margin: 0 auto
@@ -47,7 +47,7 @@
                 transform: rotateZ(0deg)
 
     #loader2
-        border: 3px solid #9356DC
+        border: 3px solid $primaire
         width: 220px
         height: 220px
         position: relative
@@ -61,7 +61,7 @@
                 transform: rotateZ(0deg)
 
     #loader3
-        border: 3px solid #99E2D0
+        border: 3px solid $tertiaire
         width: 240px
         height: 240px
         position: relative
@@ -75,7 +75,7 @@
                 transform: rotateZ(0deg)
 
     #loader4
-        border: 3px solid #FF79DA
+        border: 3px solid $secondaire
         width: 260px
         height: 260px
         position: relative
@@ -90,8 +90,8 @@
 
     #text
         /* Shrikhand */
-        font-family: 'Shrikhand', cursive
-        color: #000
+        @include shrikhand
+        color: $colorloaderlogo
         font-size: 2em
         position: relative
         top: -857px
