@@ -283,7 +283,7 @@ article {
   border-radius: 25px 25px 0 0;
   padding-right: 13px;
 }
-.table h3 {
+.table h2 {
   font-family: "Shrikhand", cursive;
   padding-left: 1em;
   padding-top: 5%;
@@ -444,7 +444,7 @@ article {
     margin: 3%;
   }
 
-  #restaurants h3 {
+  #restaurants h2 {
     font-size: 1.6em;
   }
 
