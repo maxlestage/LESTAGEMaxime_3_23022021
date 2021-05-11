@@ -15,12 +15,13 @@ footer {
   width: 100%;
   background-color: #353535;
 }
-footer h4 {
+footer h3 {
   font-family: "Shrikhand", cursive;
   color: white;
   text-decoration: none;
   padding-left: 40px;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
+  font-size: large;
 }
 footer li {
   padding-bottom: 7px;
@@ -67,6 +68,22 @@ header {
 #localize h2 {
   font-size: 1em;
   color: #4d4d4d;
+  padding-left: 45px;
+}
+
+input[type=text] {
+  border-color: transparent;
+  background-color: transparent;
+  color: #4d4d4d;
+  font-size: 1em;
+}
+
+::placeholder {
+  color: #4d4d4d;
+}
+
+input[type=text]:focus-visible {
+  outline: 1px solid transparent;
 }
 
 #info {
@@ -194,11 +211,14 @@ header {
   position: absolute;
   right: 9%;
   margin-top: 10px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #1b9677;
   background-color: #99E2D0;
   border-radius: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: smaller;
 }
 #restaurants .restaurants__cards .card__img {
   border-radius: 25px 25px 0 0;

@@ -23,6 +23,16 @@ header
     h2
         font-size: 1em
         color: #4d4d4d
+        padding-left: 45px
+input[type="text"] 
+    border-color: transparent
+    background-color: transparent
+    color: #4d4d4d
+    font-size: 1em
+::placeholder 
+    color: #4d4d4d
+input[type="text"]:focus-visible 
+    outline: 1px solid transparent
 
 #info
     background-color: $infoBackColor
@@ -133,11 +143,14 @@ header
                 position: absolute
                 right: 9%
                 margin-top: 10px
-                padding-left: 7px
-                padding-right: 7px
+                padding-left: 10px
+                padding-right: 10px
                 color: $text_tag
                 background-color: $tertiaire
                 border-radius: 2px
+                padding-top: 5px
+                padding-bottom: 5px
+                font-size: smaller
             &__img
                 border-radius: 25px 25px 0 0
                 width: 100%
